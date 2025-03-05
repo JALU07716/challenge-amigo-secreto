@@ -59,6 +59,7 @@ body {
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    text-align: center;
 }
 
 .section-title {
@@ -159,4 +160,58 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Media Queries para tablets */
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-name, .button-add {
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .input-name, .button-add {
+        width: 100%;
+        border-radius: 25px;
+        font-size: 14px;
+    }
+
+    .button-container {
+        width: 100%;
+    }
 }
